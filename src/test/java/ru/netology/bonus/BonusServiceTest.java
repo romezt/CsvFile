@@ -13,10 +13,8 @@ class BonusServiceTest {
     public void shouldCalculate(long amount, boolean registered, long expected) {
         BonusService service = new BonusService();
 
-        // вызываем целевой метод:
         long actual = service.calculate(amount, registered);
 
-        // производим проверку (сравниваем ожидаемый и фактический):
         assertEquals(expected, actual);
     }
 }
